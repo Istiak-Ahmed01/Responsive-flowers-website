@@ -7,19 +7,6 @@
 
     <title>faugei</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
-
-    header ul,header p{
-        font-family:'Inter',sans-serif;
-    }
-
-    header section h1{
-        font-family:'Noto Serif',serif;
-    }
-
-</style>
     
 </head>
 <body >
@@ -30,7 +17,7 @@
             <a href="">
             <img src="assets/logo.png" alt="">
             </a>
-           <ul class="flex space-x-12 items-center">
+           <ul class="flex space-x-12 items-center font-['Inter']">
             <li class="hidden sm:block"><a href="" class="text-[rgba(37, 36, 50, 1)] text-[1rem]  font-bold">Home</a></li>
             <li class="hidden sm:block"><a href="" class="text-[rgba(137, 135, 161, 1)] text-[1rem]">Shop</a></li>
             <li class="hidden sm:block"><a href="" class="text-[rgba(137, 135, 161, 1)] text-[1rem]">About us</a></li>
@@ -45,11 +32,11 @@
         <!-- hero container -->
         <section class="w-full mt-[7.5rem] flex flex-col-reverse sm:flex-row overflow-hidden ">
             <div class="w-full sm:w-1/2 px-4">
-                <h1 class="text-[4rem] font-bold ">
+                <h1 class="text-[4rem] font-bold font-['Noto_Serif'] ">
                 <span class="text-black">ALWAYS</span>
                 <span class="text-[#E95A08]">FRESH FLOWERS</span>
                 </h1>
-                <p class="mt-[1rem] text-gray-500 text-[1.25rem]">
+                <p class="mt-[1rem] text-gray-500 text-[1.25rem] font-['Inter']">
 Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
                 </p>
             </div>
@@ -140,8 +127,23 @@ Indulge your senses with the beauty and fragrance of our fresh flower shop. From
                 </div>
                 </section>
 
-        <section class="w-full mt-[13rem] flxe-reverse sm:flex gap-[4rem] overflow-x-hidden ">
-            <img class="w-full mb-[2rem] sm:w-1/2 " src="assets/flower-store.png" alt="">
+
+                <!--Flower & Plants Lover and badge section-->
+
+        <section class="w-full gap-[4rem] h-auto mt-[8rem] grid grid-cols-1 md:grid-cols-2">
+        
+            <div class="relative w-full">
+            <img  class="w-full mb-[2rem] md:w-[33rem]" src="assets/flower-store.png" alt="">
+            <div class="hidden md:block absolute -top-30 -right-26  w-[17rem] h-[17rem]">
+                <img class=" w-full h-full object-contain"
+                src="assets/trusted-badge.png" alt="">
+            </div>
+
+            </div>
+
+            
+
+            
             <div class="space-y-10">
                 <h1 class="font-['Noto_Serif'] text-[3rem] font-bold text-black">Flower & Plants Lover</h1>
                 <ul class="list-disc pl-5 font-['Inter'] text-[1.25rem] font-normal text-gray-500 space-y-12">
